@@ -1,0 +1,18 @@
+AnchorPane {
+    -fx-padding: 0;
+// -fx-background-color: radial-gradient(center 70% 5%, radius 60%, #99bbff, #ccddff); // Blue Gradient.
+//  -fx-background-color: radial-gradient(center 70% 5%, radius 60%, #75ffe9, #ccddff); // Greenish tint.
+
+// -fx-background-color: radial-gradient(center 70% 5%, radius 60%, #512DA8, #404040); // Purple dark gradient.
+
+-fx-background-color: radial-gradient(center 70% 5%, radius 60%, #512DA8, #D1C4E9); // Purple light gradient.
+
+
+-fx-background-repeat: repeat, no-repeat;
+    -fx-background-position: left top, left 19px top 15px;
+}
+
+* {
+    -fx-border-radius: 5 5 5 5;
+    -fx-background-radius: 5 5 5 5;
+}

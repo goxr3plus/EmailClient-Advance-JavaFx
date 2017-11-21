@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="759.0"
+            prefWidth="1237.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <WebView fx:id="messagerenderer" layoutX="310.0" layoutY="408.0" prefHeight="322.0" prefWidth="893.0"
+                 AnchorPane.bottomAnchor="28.600006103515625" AnchorPane.leftAnchor="310.0"
+                 AnchorPane.rightAnchor="33.4000244140625" AnchorPane.topAnchor="408.0"/>
+        <TableView fx:id="emailTableView" layoutX="309.0" layoutY="97.0" prefHeight="311.0" prefWidth="894.0"
+                   AnchorPane.leftAnchor="309.0" AnchorPane.rightAnchor="33.59999999999991" AnchorPane.topAnchor="97.0">
+            <columns>
+                <TableColumn fx:id="subjectCol" prefWidth="240.0" text="Subject"/>
+                <TableColumn fx:id="senderCol" minWidth="0.0" prefWidth="250.39996337890625" text="Sender"/>
+                <TableColumn fx:id="dateCol" prefWidth="239.2000732421875" text="Date"/>
+                <TableColumn fx:id="sizeCol" minWidth="0.0" prefWidth="168.0" text="Size"/>
+            </columns>
+        </TableView>
+        <TreeView fx:id="emailFoldersTreeView" layoutX="27.0" layoutY="97.0" prefHeight="634.0" prefWidth="283.0"
+                  AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="97.0"/>
+        <JFXButton buttonType="RAISED" layoutX="236.0" layoutY="44.0" onAction="#changeReadAction"
+                   style="-fx-background-color: #808080;" text="Mark As Read" textFill="WHITE"/>
+        <JFXButton fx:id="downAttachBtn" buttonType="RAISED" layoutX="364.0" layoutY="45.0"
+                   onAction="#downAttachBtnAction" style="-fx-background-color: #808080;" text="Download"
+                   textFill="WHITE"/>
+        <JFXButton fx:id="refresh" buttonType="RAISED" layoutX="150.0" layoutY="44.0" onAction="#refreshBtnAction"
+                   prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: #808080;" text="Refresh"
+                   textFill="WHITE"/>
+        <Label fx:id="downAttachLabel" layoutX="865.0" layoutY="49.0" prefHeight="18.0" prefWidth="82.0"
+               text="Downloading  :">
+            <padding>
+                <Insets top="1.0"/>
+            </padding>
+        </Label>
+        <ProgressBar fx:id="downAttachProgress" layoutX="957.0" layoutY="48.0" prefHeight="19.0" prefWidth="246.0"
+                     progress="0.0" AnchorPane.leftAnchor="957.0000000000001"
+                     AnchorPane.rightAnchor="33.599999999999994">
+            <padding>
+                <Insets top="1.0"/>
+            </padding>
+        </ProgressBar>
+        <JFXButton fx:id="compose" buttonType="RAISED" layoutX="32.0" layoutY="45.0" onAction="#composeMessageBtn"
+                   prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: #808080;" text="Compose"
+                   textFill="WHITE"/>
+    </children>
+</AnchorPane>

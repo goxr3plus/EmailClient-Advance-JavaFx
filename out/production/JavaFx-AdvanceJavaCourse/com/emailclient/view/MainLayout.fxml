@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTreeView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.web.WebView?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.emailclient.controller.MainController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="700.0">
+         <children>
+            <WebView fx:id="messagerenderer" layoutX="227.0" layoutY="278.0" prefHeight="214.0" prefWidth="466.0" AnchorPane.bottomAnchor="7.600006103515625" AnchorPane.leftAnchor="227.0" AnchorPane.rightAnchor="6.600006103515625" AnchorPane.topAnchor="278.0" />
+            <TableView fx:id="emailTableView" layoutX="228.0" layoutY="56.0" prefHeight="214.0" prefWidth="465.0" AnchorPane.bottomAnchor="229.6" AnchorPane.leftAnchor="228.0" AnchorPane.rightAnchor="6.399999999999977" AnchorPane.topAnchor="56.0">
+               <columns>
+                  <TableColumn fx:id="subjectCol" prefWidth="155.20001220703125" text="Subject" />
+                  <TableColumn fx:id="senderCol" minWidth="0.0" prefWidth="108.0" text="Sender" />
+                  <TableColumn fx:id="sizeCol" minWidth="0.0" prefWidth="144.0" text="Size" />
+               </columns></TableView>
+            <JFXTreeView fx:id="emailFoldersTreeView" layoutX="8.0" layoutY="54.0" prefHeight="439.0" prefWidth="212.0" AnchorPane.bottomAnchor="6.800000000000011" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="480.0" AnchorPane.topAnchor="54.0" />
+            <JFXButton buttonType="RAISED" layoutX="337.0" layoutY="21.0" />
+            <JFXButton buttonType="RAISED" layoutX="234.0" layoutY="21.0" />
+            <JFXButton buttonType="RAISED" layoutX="137.0" layoutY="21.0" />
+            <JFXButton fx:id="button1" buttonType="RAISED" layoutX="18.0" layoutY="21.0" onAction="#button1action" text="Button1" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
