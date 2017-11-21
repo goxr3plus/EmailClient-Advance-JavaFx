@@ -1,0 +1,20 @@
+AnchorPane {
+    -fx-padding: 0;
+   // -fx-background-color: radial-gradient(center 70% 5%, radius 60%, #99bbff, #ccddff); // Blue Gradient.
+  //  -fx-background-color: radial-gradient(center 70% 5%, radius 60%, #75ffe9, #ccddff); // Greenish tint.
+
+ -fx-background-color: radial-gradient(center 80% 5%, radius 80%, #512DA8, #303030); // Purple dark gradient.
+
+//  -fx-background-color: radial-gradient(center 70% 5%, radius 60%, #512DA8, #D1C4E9); // Purple light gradient.
+
+
+    -fx-background-repeat: repeat, no-repeat;
+    -fx-background-position: left top, left 19px top 15px;
+    // fx-background-color: transparent; // Done through scene.getOpacity() method in Main.java class.
+    -fx-background-radius: 10 10 10 10;
+}
+
+* {
+    // For sharpness :
+    -fx-border-radius: 0 0 0 0;
+}
