@@ -9,7 +9,7 @@ An Email Client in JavaFx ,i made while taking an Advance Java Course :)
 
 ## Libraries and Api's used : 
 #### Java Mail API : https://mvnrepository.com/artifact/javax.mail/javax.mail-api (Comes standerd in Java Enterprise Edition)
-
+#### Jfoenix Material Library : https://github.com/jfoenixadmin/JFoenix
 
 
 ## Screen Shots : 
